@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="../css/Fichier.css">
+</head>
+<body>
+    <header>
+        <h1>La médecine chinoise</h1>
+        <nav>
+            <ul class="menu">
+                <li ><a href="../index.html">Acceuil</a></li>
+                <li><a href="Acupuncture.html">Acupuncture</a>
+                <ul>
+                    <li><a href="Acupuncture_VS_Medecine_occidental.html">Acupuncture VS medecines occidentales</a></li>
+                </ul>
+                </li>
+                <li><a href="LesMaladies.html"> Les maladies qui se soignent avec</a></li>
+                <li><a href="Assurences.html">Assurances qui couvrent le traitement</a></li>
+            </ul>
+        </nav>
+    </header>
+<section><h2>Foires aux questions</h2>
+    <button class="note66">C’est quoi la médecine chinoise ?</button>
+    <div class="panel">
+        <p>Documentée et utilisée depuis plus de 2500 années, la médecine traditionnelle chinoise repose sur l'observation de l'organisme dans son état dynamique. L'individu est considéré dans son ensemble, corps et esprit, avec ses forces et ses faiblesses et à l'intérieur de son environnement. </p>
+    </div>
+    <button class="note66">C’est quoi les techniques thérapeutiques que la médecine chinoise consiste ?</button>
+    <div class="panel">
+        <p>ACUPUNCTURE, PHARMACOPÉE, DIÉTÉTIQUE, QI GONG, TUINA.</p>
+    </div>
+    <button class="note66">Qu’est-ce que l’acupuncture ?</button>
+    <div class="panel">
+        <p>L'exercice de l'acupuncture constitue tout acte de stimulation, généralement au moyen d'aiguilles, de certains sites déterminés de la peau, des muqueuses ou des tissus sous-cutanés du corps humain dans le but d'améliorer la santé ou de soulager la douleur. </p>
+    </div>
+    <button class="note66">Les traitements sont-ils douloureux ?</button>
+    <div class="panel">
+        <p>L'introduction des aiguilles d'acupuncture donne une sensation qui ressemble à une piqûre de moustique; cela ne dure qu'une fraction de seconde et ne laisse aucune marque. Lorsque les aiguilles sont en place, le patient ressent en général une sensation de bien-être et de détente.</p>
+    </div>
+    <button class="note66">Peut-il y avoir transmission de maladies ?</button>
+    <div class="panel">
+        <p>Depuis 2003, l'Ordre oblige tous les acupuncteurs du Québec d'utiliser sans aucune exception des aiguilles stériles jetables à usage unique. Ces mesures prises par l'Ordre éliminent tout risque de transmission d'une maladie par une aiguille d'acupuncture mal stérilisée. L'usage obligatoire d'aiguilles stériles à usage unique fait partie des rigueurs professionnelles inhérentes aux acupuncteurs du Québec.</p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("note66");
+        var i;
+        for (i = 0; i < acc.length; i++)
+            {
+            acc[i].addEventListener("click", function()
+                {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                                                     panel.style.display = "none";	
+                                                     }
+                else {
+                      panel.style.display = "block";
+                     }
+            });
+            }
+    </script>
+ </section> 
+ <div id="cont6">
+    <div><a href="mailto:bouchard.r@csdmedu.ca"target="_blank"><img class="cont5" src="../Image/contact.jpg" alt=""></a></div>
+    <div><a href="https://www.facebook.com/"target="_blank"><img class="not3" src="../Image/facebook1.jpg" alt=""></a>
+        <a href="https://twitter.com/"target="_blank"><img class="not3" src="../Image/twitter.jpg" alt=""></a>
+    </div>
+</div>
+
+<footer>
+<div id="conteneur">
+   <div> <ul class="not9">
+        <li><a href="A_propos.html">À propos</a></li>
+        <li><a href="PlanDeSite.html">Plan de site</a></li>
+        <li><a href="SiteIntret.html">Sites d'intérêt</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+    <p class="fout">Ce site est supporté par les navigateurs Edge et Chrome.</p>
+</div>
+</div>
+
+</footer>
+</body>
+</html>
